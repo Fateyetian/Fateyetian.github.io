@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "PowerShell(gh api *)",
+      "WebFetch(domain:api.github.com)",
+      "PowerShell(curl *)",
+      "PowerShell(Invoke-RestMethod -Uri \"https://api.github.com/users/Fateyetian\" | Select-Object name, bio, company, location, blog, twitter_username | Format-List)",
+      "Bash(Get-ChildItem -Path \"F:\\\\1.Git-Repository\\\\Academic_Project_Page\\\\个人博客\\\\fateyetian.github.io\" -File)",
+      "Bash(Select-Object Name, Length, LastWriteTime)",
+      "Bash(Format-Table -AutoSize)",
+      "Bash(python -c \"import sys; s=sys.stdin.read\\(\\); idx=s.find\\('lilianweng'\\); print\\(s[max\\(0,idx-300\\):idx+300]\\)\")",
+      "Bash(git remote *)"
+    ]
+  }
+}
